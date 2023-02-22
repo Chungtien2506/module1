@@ -1,0 +1,18 @@
+th{
+    background-color: darkorange;
+    color: white;
+}
+td{
+    color: blue;
+}
+span,input{
+    color: red;
+}
+form{
+width: 370px;
+}
+body{
+    width: 500px;
+    height: 800px;
+    margin: auto;
+}
