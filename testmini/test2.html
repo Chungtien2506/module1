@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test2</title>
+</head>
+<body>
+
+     <table>
+       <h3><b>nhap 2 so nguyen</b></h3>
+       <tr>
+         <td colspan="4">
+           <input type="text" id="mot">
+           <input type="text" id="hai">
+         </td>
+         <td></td>
+       </tr>
+       <tr>
+           <td id="1"><button onclick="cong()">cong(+)</button></td>
+           <td id="2"><button onclick="tru()" >tru(-)</button></td>
+           <td id="3"><button onclick="nhan()" >nhan(x)</button></td>
+           <td id="4"><button onclick="chia()" >chia(/)</button></td>
+       </tr>
+
+     </table>
+       <p id="ketqua"></p>
+<script>
+    function cong() {
+        let a= parseFloat(document.getElementById("mot").value);
+        let b= parseFloat(document.getElementById("hai").value);
+        let ketqua =a+b;
+        document.getElementById("ketqua").innerHTML = ('ketqua'+ ketqua);
+        alert(ketqua);
+    }
+    function tru() {
+        let a= parseFloat(document.getElementById("mot").value);
+        let b= parseFloat(document.getElementById("hai").value);
+        let ketqua =a-b;
+        document.getElementById("ketqua").innerHTML = ('ketqua'+ ketqua);
+        alert(ketqua);
+    }
+    function nhan() {
+        let a= parseFloat(document.getElementById("mot").value);
+        let b= parseFloat(document.getElementById("hai").value);
+        let ketqua =a*b;
+        document.getElementById("ketqua").innerHTML = ('ketqua'+ ketqua);
+        alert(ketqua);
+    }
+    function chia() {
+        let a= parseFloat(document.getElementById("mot").value);
+        let b= parseFloat(document.getElementById("hai").value);
+        let ketqua =a/b;
+        document.getElementById("ketqua").innerHTML = ('ketqua'+ ketqua);
+        alert(ketqua);
+    }
+</script>
+
+</body>
+</html>
